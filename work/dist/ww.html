@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <link rel="stylesheet" href="css/resert.css">
+    <link rel="stylesheet" href="css/firstPage.css">
+    <script src = "js/require.js" defer async="true" data-main = "js/main"></script>
+    <script src = "js/jquery-1.10.1.min.js"></script>
+    <script src = "js/jquery.cookie.js"></script>
+    <script>
+            $(function(){
+                alert(1);
+                $.ajax({
+                    url:"data/data.json",
+                    success:function(data){
+                        var arr = JSON.stringify(data);
+                        alert(typeof arr)
+                        console.log(arr);
+                        alert(2);
+                    }
+                })
+            })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

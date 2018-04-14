@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var arr = [{"name" : "first", "img": "../images/banner_1.jpg",
+        },{"name" : "second","img" : "../images/banner_2.jpg"},{
+            "name" : "three","img" : "../images/banner_3.jpg"
+        },{"name" :"four","img" : "../images/banner_4.jpg"},{
+            "name" : "five","img":"../images/banner_5.jpg"
+        },{
+            "name": "six","img" : "../images/banner_6.jpg"
+        }]
+
+        // var str = JSON.stringify(arr);
+        // document.write(str);
+
+        // var res = JSON.parse(str);
+        // document.write(res);
+
+//         var res = [{"textPic_1":"https://p1.lefile.cn/product/adminweb/2018/04/03/22090b19-4302-47a4-9a4a-8f5d438d8135.png",
+//     "textPic_2":"https://p2.lefile.cn/product/adminweb/2018/04/03/60011799-73b3-4799-8e22-c6682e8e4cab.png","criclePic":"https://p2.lefile.cn/product/adminweb/2018/04/03/362592f0-1b4b-4d46-b2bc-ea313e8d5c01.jpg","bgPic":"https://p1.lefile.cn/product/adminweb/2018/04/03/dacba6e1-f5cf-4db2-8dfa-da6b16b98bac.jpg"
+// },{
+//     "textPic_1":"https://p2.lefile.cn/product/adminweb/2018/04/03/e125893c-42d2-40d6-818c-adc5984e2894.png",
+//     "textPic_2":"https://p3.lefile.cn/product/adminweb/2018/04/03/a643ccd3-7092-4684-8834-e45faad52981.png",
+//     "criclePic":"https://p2.lefile.cn/product/adminweb/2018/04/03/056941e3-7192-4cfb-b8c4-32ac61bb3c5a.jpg",
+//     "bgPic":"https://p3.lefile.cn/product/adminweb/2018/04/03/43bac4e7-c7f6-4776-966b-7fa24aee334b.jpg"
+// },{
+//     "textPic_1":"https://p1.lefile.cn/product/adminweb/2018/04/03/67c7861f-fffe-4616-8d14-3d2c066ec095.png",
+//     "textPic_2":"https://p4.lefile.cn/product/adminweb/2018/04/03/2a438a43-d25f-41a0-8ad8-a1e4b8808af1.png",
+//     "criclePic":"https://p2.lefile.cn/product/adminweb/2018/04/03/9ca6341c-9062-4c1c-a42c-b6c61f82edb4.png",
+//     "bgPic":"https://p3.lefile.cn/product/adminweb/2018/04/03/1cec0736-b403-4bf3-9bb0-1171470f4cc8.jpg"
+// },{
+//     "textPic_1":"https://p4.lefile.cn/product/adminweb/2018/04/03/89c88ac0-ba80-465d-bf5c-dcf08a01d9d1.png",
+//     "textPic_2":"https://p3.lefile.cn/product/adminweb/2018/04/03/2a9cddba-bb5a-4375-bde0-c62558f57052.png",
+//     "criclePic":"https://p3.lefile.cn/product/adminweb/2018/04/03/4ac2b322-638f-4c11-9237-d8342f9c24c6.jpg",
+//     "bgPic":"https://p2.lefile.cn/product/adminweb/2018/04/03/a63be799-d333-4a99-8a05-bc83d0495940.jpg"
+// }];
+//     var str1 = JSON.stringify(res);
+    // document.write(str1);
+
+
+    // var arr = [{
+    //     "leftPic" : "https://p4.lefile.cn/product/adminweb/2018/04/02/e7618ba1-6cec-427e-a441-8a297d53893d.jpg",
+    //     "right_1" : "https://p3.lefile.cn/product/adminweb/2018/03/26/7902ca1d-c2db-4fb2-96ab-102e982fcccc.jpg",
+    //     "right_2" : "https://p3.lefile.cn/product/adminweb/2018/03/14/f112887f-dce5-4011-9fec-09f78aa56a6b.jpg",
+    //     "right_3" : "https://p2.lefile.cn/product/adminweb/2018/03/16/ea18065e-10e7-4b6c-8a42-0c61091985c9.jpg",
+    //     "right_4" : "https://p1.lefile.cn/product/adminweb/2018/03/21/a601381a-1c00-495c-a7be-484f43755d28.jpg"
+    // },{
+    //     "leftPic" : "https://p2.lefile.cn/product/adminweb/2018/03/20/a86d7ed1-be94-419d-8a39-31fe372c2c94.jpg",
+    //     "right_1" : "https://p1.lefile.cn/product/adminweb/2018/03/21/deb1432b-bb0b-46da-b365-3faa9a025fb3.jpg",
+    //     "right_2" : "https://p2.lefile.cn/product/adminweb/2018/03/21/c5825df5-3015-4ec3-b73f-82e6ba14124c.jpg",
+    //     "right_3" : "https://p3.lefile.cn/product/adminweb/2018/03/21/7abaa2bf-0176-4c70-bdc4-07dd15f42f42.jpg",
+    //     "right_4" : "https://p2.lefile.cn/product/adminweb/2018/03/21/c5825df5-3015-4ec3-b73f-82e6ba14124c.jpg"
+    // },{
+    //     "leftPic" : "https://p3.lefile.cn/product/adminweb/2018/04/02/e7f30b43-2977-4b26-b256-8f96ef593b5e.jpg",
+    //     "right_1" : "https://p3.lefile.cn/product/adminweb/2018/04/04/701d7411-1e9f-46f5-a817-d5bcd3312c00.jpg",
+    //     "right_2" : "https://p3.lefile.cn/product/adminweb/2018/03/07/1987bbc8-237f-4783-9223-395fa5718fb5.jpg",
+    //     "right_3" : "https://p2.lefile.cn/product/adminweb/2018/01/05/6003f3f6-7bbf-4953-abb2-9803c5459988.jpg",
+    //     "right_4" : "https://p4.lefile.cn/product/adminweb/2018/03/07/52ef6e03-70f1-4ee0-af77-17ab112d3fed.jpg"
+    // },{
+    //     "leftPic" : "https://p4.lefile.cn/product/adminweb/2018/03/30/60ece961-3b35-424c-b12b-6dd4d003978c.jpg",
+    //     "right_1" : "https://p4.lefile.cn/product/adminweb/2018/03/07/95db16c1-4dff-4a09-a3e9-40c92b728394.jpg",
+    //     "right_2" : "https://p3.lefile.cn/product/adminweb/2018/03/07/1987bbc8-237f-4783-9223-395fa5718fb5.jpg",
+    //     "right_3" : "https://p4.lefile.cn/product/adminweb/2018/01/19/b1f68d90-a8b8-46b3-a55c-d511ac5c7779.jpg",
+    //     "right_4" : "https://p4.lefile.cn/product/adminweb/2018/03/07/52ef6e03-70f1-4ee0-af77-17ab112d3fed.jpg"
+    // },{
+    //     "leftPic" : "https://p2.lefile.cn/product/adminweb/2018/03/16/52f229aa-cf69-4307-8273-23b1b530c3e8.jpg",
+    //     "right_1" : "https://p1.lefile.cn/product/adminweb/2018/01/05/5acef13a-bbf7-4236-8b3c-4918c1c91bc8.jpg",
+    //     "right_2" : "https://p2.lefile.cn/product/adminweb/2018/03/06/a43f2d44-7ab7-42cc-b9d3-8ee505a42011.jpg",
+    //     "right_3" : "https://p2.lefile.cn/product/adminweb/2018/03/06/d502dd66-d582-4b29-9ffc-bbbbdd1bad31.jpg",
+    //     "right_4" : "https://p2.lefile.cn/product/adminweb/2018/03/06/31f7fe89-86e1-4d43-898f-60ba9c46e2a1.jpg"
+    // },{
+    //     "leftPic" : "https://p2.lefile.cn/product/adminweb/2018/01/05/98894b9a-d357-4854-ad94-e6dea63efa3e.jpg",
+    //     "right_1" : "https://p2.lefile.cn/product/adminweb/2018/03/07/3149b6b2-4345-4f2b-8637-768e1d0146cd.jpg",
+    //     "right_2" : "https://p4.lefile.cn/product/adminweb/2018/01/05/451a9901-c23d-41ed-a5da-faf5de83acb6.jpg",
+    //     "right_3" : "https://p2.lefile.cn/product/adminweb/2018/01/05/7eab0563-8971-4067-b31b-eb9ee351b883.jpg",
+    //     "right_4" : "https://p2.lefile.cn/product/adminweb/2018/03/02/9d414264-be39-4a77-99a6-41b127ab9301.jpg"
+    // }];
+
+
+
+    // var arr = [{
+    //     "img":"https://p1.lefile.cn/product/adminweb/2017/12/14/c8a7da70-e8ca-417e-8a10-42da92645178.jpg"
+    // },{
+    //     "img" :"https://p1.lefile.cn/product/adminweb/2017/12/14/adc24b30-37b8-461b-9962-df5ecdb8759c.jpg"
+    // },{
+    //     "img":"https://p2.lefile.cn/product/adminweb/2018/01/30/21d3329d-62d1-41b7-b59e-290ef42d1a77.jpg"
+    // },{
+    //     "img":"https://p2.lefile.cn/product/adminweb/2018/04/04/3308f2ba-0c2d-445b-9c65-f5ec00d66de8.jpg"
+    // },{
+    //     "img":"https://p2.lefile.cn/product/adminweb/2018/03/28/0fc58a48-915f-461c-8a0c-917cd4eb7664.jpg"
+    // },{
+    //     "img":"https://p2.lefile.cn/product/adminweb/2018/03/06/bbfdf6cb-80b8-4faa-b477-3ee981299618.jpg"
+    // },{
+    //     "img" : "https://p3.lefile.cn/product/adminweb/2017/12/14/2368f309-2fdb-43e3-aa17-249174a7f04a.jpg"
+    // },{
+    //     "img" : "https://p2.lefile.cn/product/adminweb/2017/12/14/2fb50a3a-098c-43d0-87f7-29a865f0de17.jpg"
+    // }]
+    //
+    // var arr = [{
+    //     "img":"https://p3.lefile.cn/product/adminweb/2016/04/29/v2ZFfc2nXZUmKyJH6RuWC9qzS-1135.w164.jpg",
+    //     "pro":"拯救者 忍7000 分体台式机 黑",
+    //     "detail":"速度与容量的贴心结合",
+    //     "money":"￥6299",
+
+    //     "pic_1": "https://p2.lefile.cn/product/adminweb/2017/10/30/bdi0yNVSO1QegEFa9cv0s0Ejz-4960.w84.jpg",
+    //     "pic_2":"https://p4.lefile.cn/product/adminweb/2017/10/30/U3fvn2T4rkjEniRfOOyL1jOh2-5072.w520.jpg",
+    //     "pic_3":"https://p1.lefile.cn/product/adminweb/2017/10/30/LVtaek2KkyW5ZmpQ6SbfOGPBG-5033.w520.jpg",
+    //     "pic_4":"https://p3.lefile.cn/product/adminweb/2017/10/30/Gtpv5Svm9xEilGtIks1YgUmuP-5444.w520.jpg",
+    //     "pic_5":"https://p2.lefile.cn/product/adminweb/2017/10/30/wQgTYFpl5cKMNAor91oZU8rhW-5569.w520.jpg",
+    //     "title":"拯救者 R720-15IKBN 15.6英寸游戏笔记本 黑金 80WW000YCD",
+    //     "detail":"i5-7300HQ/Windows 10 中文版/15.6英寸/8G/1T+128G SSD/GTX 1050ti 4G独显/黑金",
+    //     "color_1":["黑色/15.6英寸","黑金/15.6英寸"],
+    //     "stystem":["i7-7700HQ/Windows 10 中文版","i5-7300HQ/Windows 10 中文版"],
+    //     "gtx":["8G/1T+256G SSD/GTX 1050Ti 2G独显","8G/1T+256G SSD/GTX 1050Ti 2G独显","8G/1T+256G SSD/GTX 1050Ti 2G独显"],
+    //     "person":"私人定制"
+    // },{
+    //     "img":"https://p1.lefile.cn/product/adminweb/2017/09/05/ZFK5tzhIzOOmNJ2ZYhegPnKvT-3434.w164.jpg",
+    //     "pro":"联想S5 4G+64G 烈焰红",
+    //     "detail":"震撼上市",
+    //     "money":"￥1299"
+    // },{
+    //     "img":"https://p2.lefile.cn/product/adminweb/2018/03/22/2GuhEjJI53CUvQQwEwudTPtZR-4187.w164.jpg",
+    //     "pro":"小新 潮7000 14.0英寸 轻薄笔记本",
+    //     "detail":"更轻薄更出色",
+    //     "money":"￥5699"
+    // },{
+    //     "img":"https://p2.lefile.cn/product/adminweb/2017/12/14/c3b9d479-be72-4cca-abea-5ea880cd550e.jpg",
+    //     "pro":"小新 Air 12.2英寸超轻薄笔记本",
+    //     "detail":"简约设计 金属机身",
+    //     "money":"￥3699"
+    // },{
+    //     "img":"https://p2.lefile.cn/product/adminweb/2017/02/15/SpiZPE9zeAXGQrOgIz3XliLK3-8881.w164.jpg",
+    //     "pro":"全名K歌 定制版 联想小新麦克",
+    //     "detail":"K歌+直播利器",
+    //     "money":"￥299"
+    // }];
+// var arr = [{
+//     "id":1,
+//     "number":2,
+//     "img":"https://p1.lefile.cn/product/adminweb/2016/10/13/Lwo4t06lSfzECwsXIuIt1B496-1485.w520.jpg",
+//     "pro":"拯救者 忍7000 分体台式机 黑","detail":"速度与容量的贴心结合",
+//     "money":"￥6299",
+//     "pic":["https://p1.lefile.cn/product/adminweb/2016/10/13/Lwo4t06lSfzECwsXIuIt1B496-1485.w520.jpg","https://p4.lefile.cn/product/adminweb/2016/04/29/odB1r7j6R7Eqr4BvmFZFI37zm-8051.w520.jpg","https://p1.lefile.cn/product/adminweb/2016/04/29/yGtaqCwlDc4BTcDarAVzwMCqT-8619.w520.jpg","https://p1.lefile.cn/product/adminweb/2017/05/09/UyeR4iM6Awpz4UTskm0jQL2YB-4993.w520.jpg"],
+//     "title":"AIO 300-23ISU 23英寸一体机 白色 F0BY00SWCD",
+//     "color":["黑色/23.0英寸"],
+//     "stystem":["黑色/23.0英寸","黑色/23.0英寸"],
+//     "gtx":["8GB/1T/独立显卡","8GB/1T/独立显卡","8GB/1T/独立显卡"]
+// },
+// {
+//     "id":2,
+//     "number":6,
+//     "img":"https://p4.lefile.cn/product/adminweb/2017/07/30/2frxLWS0ncney7NbQlyPPJfVp-6872.w520.jpg",
+//     "pro":"联想S5 4G+64G 烈焰红","detail":"震撼上市",
+//     "money":"￥1299",
+//     "pic":["https://p4.lefile.cn/product/adminweb/2017/07/30/2frxLWS0ncney7NbQlyPPJfVp-6872.w520.jpg","https://p3.lefile.cn/product/adminweb/2017/02/04/dwVdF8eVYapKJOv3EyQoddcFF-7858.w520.jpg","https://p3.lefile.cn/product/adminweb/2017/07/30/l0hg0LHjoTzqCkz63M8ipWZwg-7020.w520.jpg","https://p4.lefile.cn/product/adminweb/2017/02/04/6XwXnpLrHwYeAOpnK2jhiIFWK-9019.w520.jpg"],
+//     "title":"拯救者 R720-15IKBN 15.6英寸游戏笔记本 黑色 80WW000RCD",
+//     "color":["黑色/15.6英寸"],
+//     "stystem":["i5-7300HQ/Windows 10 中文版","i5-7300HQ/Windows 10 中文版"],
+//     "gtx":["8G/1T+128G SSD/GTX 1050 2G独显","8G/1T+128G SSD/GTX 1050 2G独显","8G/1T+128G SSD/GTX 1050 2G独显"]
+// },
+// {
+//     "id":3,
+//     "number":9,
+//     "img":"https://p3.lefile.cn/product/adminweb/2017/05/12/7nxCnXVXPJznJt3eeSSjlHJRK-3191.w520.jpg",
+//     "pro":"小新 潮7000 14.0英寸 轻薄笔记本",
+//     "detail":"更轻薄更出色",
+//     "money":"￥5699",
+//     "pic":["https://p3.lefile.cn/product/adminweb/2017/05/12/7nxCnXVXPJznJt3eeSSjlHJRK-3191.w520.jpg","https://p2.lefile.cn/product/adminweb/2018/03/22/NHMsnTRdgrZOHHQycMqJTzaQ8-8082.w520.jpg","https://p3.lefile.cn/product/adminweb/2017/05/12/wPyzpdz2g9z80viPiEVruC7qt-3246.w520.jpg","https://p3.lefile.cn/product/adminweb/2017/05/12/44CnCdlV4t0x2yjGS7yWVQsb4-3614.w520.jpg"],
+//     "title":"小新 潮7000 14.0英寸轻薄笔记本 火花金 81BM0003CD",
+//     "color":["黑色/15.6英寸"],
+//     "stystem":["i5-7300HQ/Windows 10 中文版","i5-7300HQ/Windows 10 中文版"],
+//     "gtx":["8G/1T+128G SSD/GTX 1050 2G独显","8G/1T+128G SSD/GTX 1050 2G独显","8G/1T+128G SSD/GTX 1050 2G独显"]
+// },
+// {
+//     "id":4,
+//     "number":4,
+//     "img":"https://p1.lefile.cn/product/adminweb/2017/08/21/bkxPWwa5g5kjUEshe6WWuOHW5-8754.w520.jpg",
+//     "pro":"小新 Air 12.2英寸超轻薄笔记本",
+//     "detail":"简约设计 金属机身",
+//     "money":"￥3699",
+//     "pic":["https://p1.lefile.cn/product/adminweb/2017/08/21/bkxPWwa5g5kjUEshe6WWuOHW5-8754.w520.jpg","https://p1.lefile.cn/product/adminweb/2017/08/21/6LPIqG2BEte1hfUUvlRBP3uLt-9085.w520.jpg","javascript:;","https://p4.lefile.cn/product/adminweb/2017/08/21/88hG0AIzneDGFOS2QA0Lu7y4X-8387.w520.jpg"],
+//     "title":"小新 潮7000 13.3英寸轻薄笔记本 花火银 O2O_81BS0009CD",
+//     "color":["黑色/15.6英寸"],
+//     "stystem":["i5-7300HQ/Windows 10 中文版","i5-7300HQ/Windows 10 中文版"],
+//     "gtx":["8G/1T+128G SSD/GTX 1050 2G独显","8G/1T+128G SSD/GTX 1050 2G独显","8G/1T+128G SSD/GTX 1050 2G独显"]
+// },
+// {
+//     "id":5,
+//     "number":23,
+//     "img":"https://p1.lefile.cn/product/adminweb/2017/02/15/2IvGvFEogezKAo3brgDOpvM2w-3206.w520.jpg",
+//     "pro":"全名K歌 定制版 联想小新麦克","detail":"K歌+直播利器",
+//     "money":"￥299",
+//     "pic":["https://p1.lefile.cn/product/adminweb/2017/02/15/2IvGvFEogezKAo3brgDOpvM2w-3206.w520.jpg","https://p3.lefile.cn/product/adminweb/2017/02/15/afuVCRu1xFIG4Bsn0B5vnJfhp-3294.w520.jpg","https://p4.lefile.cn/product/adminweb/2017/02/15/erudPAK82Pw2omIqAHd6VpCqv-3287.w520.jpg","https://p4.lefile.cn/product/adminweb/2017/02/15/l6gqEz9tTcGMnq3nwteajd9Y2-4253.w520.jpg"],
+//     "title":"AIO 310-20ASR 19.5英寸一体机 F0CK0002CD",
+//     "color":["黑色/15.6英寸"],
+//     "stystem":["i5-7300HQ/Windows 10 中文版","i5-7300HQ/Windows 10 中文版"],
+//     "gtx":["8G/1T+128G SSD/GTX 1050 2G独显","8G/1T+128G SSD/GTX 1050 2G独显","8G/1T+128G SSD/GTX 1050 2G独显"]
+// },
+// {
+//     "id":6,
+//     "number":211,
+//     "img":"https://p1.lefile.cn/product/adminweb/2017/02/15/2IvGvFEogezKAo3brgDOpvM2w-3206.w520.jpg",
+//     "pro":"ThinkPad 烈焰红","detail":"无形有力 黑色智慧",
+//     "money":"￥9699",
+//     "pic":["https://p1.lefile.cn/product/adminweb/2017/02/15/2IvGvFEogezKAo3brgDOpvM2w-3206.w520.jpg","https://p3.lefile.cn/product/adminweb/2017/02/15/afuVCRu1xFIG4Bsn0B5vnJfhp-3294.w520.jpg","https://p4.lefile.cn/product/adminweb/2017/02/15/erudPAK82Pw2omIqAHd6VpCqv-3287.w520.jpg","https://p4.lefile.cn/product/adminweb/2017/02/15/l6gqEz9tTcGMnq3nwteajd9Y2-4253.w520.jpg"],
+//     "title":"AIO 310-20ASR 19.5英寸一体机 F0CK0002CD",
+//     "color":["黑色/15.6英寸"],
+//     "stystem":["i5-7300HQ/Windows 10 中文版","i5-7300HQ/Windows 10 中文版"],
+//     "gtx":["8G/1T+128G SSD/GTX 1050 2G独显","8G/1T+128G SSD/GTX 1050 2G独显","8G/1T+128G SSD/GTX 1050 2G独显"]
+// },
+// {
+//     "id":7,
+//     "number":299,
+//     "img":"https://p1.lefile.cn/product/adminweb/2017/02/15/2IvGvFEogezKAo3brgDOpvM2w-3206.w520.jpg",
+//     "pro":"联想S5 4G+64G 烈焰红",
+//     "detail":"震撼上市",
+//     "money":"￥1299",
+//     "pic":["https://p1.lefile.cn/product/adminweb/2017/02/15/2IvGvFEogezKAo3brgDOpvM2w-3206.w520.jpg","https://p3.lefile.cn/product/adminweb/2017/02/15/afuVCRu1xFIG4Bsn0B5vnJfhp-3294.w520.jpg","https://p4.lefile.cn/product/adminweb/2017/02/15/erudPAK82Pw2omIqAHd6VpCqv-3287.w520.jpg","https://p4.lefile.cn/product/adminweb/2017/02/15/l6gqEz9tTcGMnq3nwteajd9Y2-4253.w520.jpg"],
+//     "title":"AIO 310-20ASR 19.5英寸一体机 F0CK0002CD",
+//     "color":["黑色/15.6英寸"],
+//     "stystem":["i5-7300HQ/Windows 10 中文版","i5-7300HQ/Windows 10 中文版"],
+//     "gtx":["8G/1T+128G SSD/GTX 1050 2G独显","8G/1T+128G SSD/GTX 1050 2G独显","8G/1T+128G SSD/GTX 1050 2G独显"]
+// },
+// {
+//     "id":8,
+//     "number":100,
+//     "img":"https://p1.lefile.cn/product/adminweb/2017/02/15/2IvGvFEogezKAo3brgDOpvM2w-3206.w520.jpg",
+//     "pro":"小新 潮7000 14.0英寸 轻薄笔记本",
+//     "detail":"更轻薄更出色",
+//     "money":"￥5699",
+//     "pic":["https://p1.lefile.cn/product/adminweb/2017/02/15/2IvGvFEogezKAo3brgDOpvM2w-3206.w520.jpg","https://p3.lefile.cn/product/adminweb/2017/02/15/afuVCRu1xFIG4Bsn0B5vnJfhp-3294.w520.jpg","https://p4.lefile.cn/product/adminweb/2017/02/15/erudPAK82Pw2omIqAHd6VpCqv-3287.w520.jpg","https://p4.lefile.cn/product/adminweb/2017/02/15/l6gqEz9tTcGMnq3nwteajd9Y2-4253.w520.jpg"],
+//     "title":"AIO 310-20ASR 19.5英寸一体机 F0CK0002CD",
+//     "color":["黑色/15.6英寸"],
+//     "stystem":["i5-7300HQ/Windows 10 中文版","i5-7300HQ/Windows 10 中文版"],
+//     "gtx":["8G/1T+128G SSD/GTX 1050 2G独显","8G/1T+128G SSD/GTX 1050 2G独显","8G/1T+128G SSD/GTX 1050 2G独显"]
+// }]
+    var str = JSON.stringify(arr);
+    document.write(str);
+    </script>
+</head>
+<body>
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+</body>
+</html>

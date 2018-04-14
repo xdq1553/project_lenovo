@@ -1,0 +1,187 @@
+body {
+  position: relative;
+  background: #f7f7f7; }
+
+.top {
+  padding-left: 10%;
+  background: #444;
+  height: 35px;
+  margin: auto; }
+  .top ul {
+    width: 1200px;
+    height: 35px;
+    margin: auto;
+    overflower: hidden;
+    padding-left: 20px;
+    background: #444; }
+    .top ul li {
+      width: 64px;
+      height: 35px;
+      padding-left: 8px;
+      line-height: 35px;
+      float: left; }
+      .top ul li a {
+        color: #cacaca;
+        font-size: 12px; }
+
+.logo {
+  width: 60px;
+  height: 180px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0; }
+
+.lrpage {
+  position: fixed;
+  width: 330px;
+  height: auto;
+  padding: 0 125px;
+  left: 50%;
+  top: 90px;
+  margin-left: -290px;
+  z-index: 1000100;
+  background: #fff;
+  padding-bottom: 30px; }
+  .lrpage .login .title {
+    margin-top: 60px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px; }
+  .lrpage .login .loginBox {
+    margin-top: 38px; }
+    .lrpage .login .loginBox .name {
+      width: 100%;
+      margin-bottom: 14px; }
+      .lrpage .login .loginBox .name input {
+        width: 258px;
+        border: 1px solid #d6d6d6;
+        height: 44px;
+        line-height: 44px;
+        padding-left: 20px;
+        padding-right: 50px;
+        font-size: 14px;
+        color: #8c8c8c;
+        display: block;
+        cursor: pointer; }
+    .lrpage .login .loginBox .password {
+      width: 100%;
+      margin-bottom: 14px; }
+      .lrpage .login .loginBox .password input {
+        width: 258px;
+        border: 1px solid #d6d6d6;
+        height: 44px;
+        line-height: 44px;
+        padding-left: 20px;
+        padding-right: 50px;
+        font-size: 14px;
+        color: #8c8c8c;
+        display: block;
+        cursor: pointer; }
+    .lrpage .login .loginBox .lrStatus {
+      margin: 16px 0; }
+      .lrpage .login .loginBox .lrStatus input[type="checkbox"] {
+        width: 13px;
+        height: 13px;
+        display: block;
+        float: left;
+        margin-right: 5px;
+        outline: none;
+        border: 1px solid #000;
+        cursor: pointer; }
+      .lrpage .login .loginBox .lrStatus p {
+        line-height: 14px;
+        color: #000;
+        font-size: 14px;
+        width: 200px;
+        cursor: pointer; }
+    .lrpage .login .loginBox .submit {
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      width: 330px;
+      background: #e22319;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      margin: 10px 0 0; }
+    .lrpage .login .loginBox .register {
+      margin: 16px 0; }
+      .lrpage .login .loginBox .register .phone {
+        float: left;
+        color: #ef1c22;
+        font-size: 14px;
+        line-height: 14px; }
+      .lrpage .login .loginBox .register .login_1 {
+        float: right; }
+        .lrpage .login .loginBox .register .login_1 .btn_1 {
+          border-right: 1px solid #a4a3a3;
+          padding-right: 5px;
+          font-size: 14px;
+          line-height: 14px;
+          float: left;
+          color: #757575; }
+        .lrpage .login .loginBox .register .login_1 .btn_2 {
+          border-left: 1px solid #e3e3e3;
+          padding-left: 5px;
+          font-size: 14px;
+          line-height: 14px;
+          float: left;
+          color: #757575; }
+    .lrpage .login .loginBox .others {
+      width: 330px;
+      margin-top: 50px; }
+      .lrpage .login .loginBox .others .otherTitle {
+        width: 330px;
+        text-align: center;
+        font-size: 14px;
+        color: #8c8c8c;
+        line-height: 14px;
+        height: 14px;
+        overflow: hidden; }
+        .lrpage .login .loginBox .others .otherTitle span {
+          width: 123px;
+          height: 1px;
+          background: #a4a3a3;
+          float: left;
+          margin-top: 6px;
+          display: block; }
+        .lrpage .login .loginBox .others .otherTitle p {
+          text-align: center;
+          font-size: 14px;
+          color: #8c8c8c;
+          line-height: 14px;
+          float: left;
+          font-style: normal; }
+    .lrpage .login .loginBox .iconPics {
+      margin-top: 15px;
+      padding: 0 60px;
+      overflow: hidden; }
+      .lrpage .login .loginBox .iconPics a {
+        margin-left: 10px;
+        display: block;
+        float: left; }
+        .lrpage .login .loginBox .iconPics a .icon_qq {
+          background: url("../images/pic/qq.png") 0 0 no-repeat;
+          display: block;
+          margin: 0 auto;
+          width: 31px;
+          height: 31px; }
+        .lrpage .login .loginBox .iconPics a .icon_wb {
+          background: url("../images/pic/weibo.png") 0 0 no-repeat;
+          display: block;
+          margin: 0 auto;
+          width: 31px;
+          height: 31px; }
+        .lrpage .login .loginBox .iconPics a .icon_wx {
+          background: url("../images/pic/weixin.png") 0 0 no-repeat;
+          display: block;
+          margin: 0 auto;
+          width: 31px;
+          height: 31px; }
+        .lrpage .login .loginBox .iconPics a .icon_zf {
+          background: url("../images/pic/zhifubao.png") 0 0 no-repeat;
+          display: block;
+          margin: 0 auto;
+          width: 31px;
+          height: 31px; }

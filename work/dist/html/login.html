@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../css/resert.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src = "../js/jquery-1.10.1.min.js"></script>
+    <script src = "../js/jquery.cookie.js"></script>
+    <script>
+            var oLogin = $(".lrpage");
+            oLogin.find(".close").click(function(){
+                oLogin.css("display","none");
+            })
+
+    </script>
+</head>
+<body>
+    <!-- 顶部 -->
+    <div class="top">
+        <ul>
+            <li><a href="../index.html">联想首页</a></li>
+            <li><a href="shopping.html">商城</a></li>
+            <li><a href="">社区</a></li>
+            <li><a href="">服务</a></li>
+            <li><a href="">资讯</a></li>
+            <li><a href="">门店</a></li>
+            <li><a href="">手机版<span></span></a></li>
+        </ul>
+    </div>
+
+    <div class="logo">
+    <a href="#" id="logo_1"><img src="https://p4.lefile.cn/product/adminweb/2017/06/01/0d66fb8c-f7b0-4d2c-888c-51d56f67aeab_1.jpg" alt=""></a></div>
+
+    <div class="lrpage">
+    <div class="login">
+        <div class="title">联想会员登录</div>
+        <div class="loginBox">
+            <div class="name">
+                <input type="text" placeholder="邮箱/手机号码" id="name">
+            </div>
+            <div class="password">
+                <input type="text" placeholder="密码" id="password">
+            </div>
+            <div class="lrStatus">
+                <input type="checkbox" checked="" class="checkbox">
+                <p>自动登录</p>
+            </div>
+            <a href="" class="submit">登录</a>
+            <div class="register">
+                <a href="" class="phone">手机验证码快捷登录</a>
+                <div class="login_1">
+                    <a href="register.html" class="btn_1">立即注册</a>
+                    <a href="" class="btn_2">忘记密码？</a>
+                </div>
+            </div>
+            <div class="others">
+                <div class="otherTitle">
+                    <span></span>
+                    <p>其他登录方式</p>
+                    <span></span>
+                </div>
+            </div>
+            <div class="iconPics">
+                <a href="" class="qq"><i class="icon_qq"></i></a>
+                <a href="" class="wb"><i class="icon_wb"></i></a>
+                <a href="" class="wx"><i class="icon_wx"></i></a>
+                <a href="" class="zf"><i class="icon_zf"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

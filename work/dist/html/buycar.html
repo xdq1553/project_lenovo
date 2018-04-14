@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的购物车</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../css/resert.css">
+    <link rel="stylesheet" href="../css/buycar.css">
+    <script src = "../js/require.js" defer async="true" data-main = "../js/buycar"></script>
+    <script src = "../js/jquery-1.10.1.min.js"></script>
+    <script src = "../js/jquery.cookie.js"></script>
+    <script>
+            $(function(){
+                require(["buycar"], function(buycar){
+                    buycar.buycar();
+                })
+                var oLogin = $(".lrpage");
+                var oLr = $(".top").find(".top_1").find("a");
+                console.log(oLr);
+                oLr.click(function(){
+                    $(".bgpage").css("display","block");
+                   $(".lrpage").css("display","block");
+                })
+                oLogin.find(".close").click(function(){
+                    $(".bgpage").css("display","none");
+                    oLogin.css("display","none");
+                })
+
+            })
+
+    </script>
+</head>
+<body>
+    <div class="top">
+        <div class="top_1">
+                <div class="login"><a href="javascript:;">登录</a><span>|</span></div>
+                <div class="first"><a href="shopping.html">返回首页</a><span>|</span></div>
+        </div>
+    </div>
+
+    <!-- 图片栏 -->
+    <div class="pic">
+        <img src="https://m1.lefile.cn/trade/cn/pc/images/base/pic-13.jpg" alt="" class="pic_1">
+        <img src="https://m1.lefile.cn/trade/cn/pc/images/base/pic-12.jpg" alt="" class="pic_2">
+    </div>
+    <!-- 购物商品栏 -->
+    <div id="product">
+        <div class="pro">
+            <table cellspacing="0" align="center" cellpadding="0">
+                <tr>
+                    <th colspan="3" width="37%">商品</th>
+                    <th width="14%">规格</th>
+                    <th width="13%">单价</th>
+                    <th width="13%">数量</th>
+                    <th width="13%">金额</th>
+                    <th width="10%">操作</th>
+                </tr>
+            </table>
+    <!-- 添加商品 -->
+
+        </div>
+        <!-- 结算 -->
+        <div class="calcute">
+            <div class="check">
+                <div class="checked">
+                    <input type="checkbox" checked="">
+                    <span>全选</span>
+                </div>
+                <a href="" class="delete">删除选中商品</a>
+            </div>
+
+            <ul class="paymon">
+                <li>商品总价：<span id="promoney"></span></li>
+                <li>优惠节省：0.00</li>
+                <li>合计：<span id="money">00.00</span></li>
+            </ul>
+        </div>
+        <div class="add">
+            <a href="" id="submit">去结算</a>
+        </div>
+    </div>
+    <!-- 没有商品 -->
+    <div class="nopro">
+        <div class="nopro_1">
+            <h3>快来选购吧</h3>
+            <div class="btn">
+                <a href="shopping.html">选购商品</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+<!-- 商城底部 -->
+<div class="shop_footer">
+    <div class="foot_img">
+        <div class="foot_pic">
+            <img src="https://p3.lefile.cn/product/adminweb/2016/04/25/8518047e-a59d-4123-ad1f-4a68391ec161.jpg" alt="">
+        </div>
+    </div>
+    <div class="foot_text">
+        <div class="foot_text1">
+            <dl>
+                <dt>购物指南</dt>
+                <dd>
+                    <a href="">服务商信息</a>
+                    <a href="">购买流程</a>
+                    <a href="">注册登录</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>配送方式</dt>
+                <dd>
+                    <a href="">配送方式</a>
+                    <a href="">配送方式信息</a>
+                    <a href="">签收原则</a>
+                    <a href="">物流查询</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd>
+                    <a href="">分期支付</a>
+                    <a href="">支付方式</a>
+                    <a href="">支付问题</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>订单信息</dt>
+                <dd>
+                    <a href="">订单信息</a>
+                    <a href="">发票信息</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>售后服务</dt>
+                <dd>
+                    <a href="">售后服务总则</a>
+                    <a href="">24小时在线客服</a>
+                    <a href="">手机激活查询</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>其他说明</dt>
+                <dd>
+                    <a href="">服务承诺</a>
+                    <a href="">账户安全</a>
+                    <a href="">手机产品购买须知</a>
+                    <a href="">环境信息</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 登录注册 -->
+<div class="bgpage"></div>
+<div class="lrpage">
+    <a href="#" class="close"></a>
+    <div class="login">
+        <div class="title">联想会员登录</div>
+        <div class="loginBox">
+            <div class="name">
+                <input type="text" placeholder="邮箱/手机号码" id="name">
+            </div>
+            <div class="password">
+                <input type="text" placeholder="密码" id="password">
+            </div>
+            <div class="lrStatus">
+                <input type="checkbox" checked="" class="checkbox">
+                <p>自动登录</p>
+            </div>
+            <a href="" class="submit">登录</a>
+            <div class="register">
+                <a href="" class="phone">手机验证码快捷登录</a>
+                <div class="login_1">
+                    <a href="../html/register.html" class="btn_1">立即注册</a>
+                    <a href="" class="btn_2">忘记密码？</a>
+                </div>
+            </div>
+            <div class="others">
+                <div class="otherTitle">
+                    <span></span>
+                    <p>其他登录方式</p>
+                    <span></span>
+                </div>
+            </div>
+            <div class="iconPics">
+                <a href="" class="qq"><i class="icon_qq"></i></a>
+                <a href="" class="wb"><i class="icon_wb"></i></a>
+                <a href="" class="wx"><i class="icon_wx"></i></a>
+                <a href="" class="zf"><i class="icon_zf"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
