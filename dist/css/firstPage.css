@@ -1,0 +1,840 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  height: 3000px; }
+
+@media screen and (min-width: 1420px) and (max-width: 1520px) {
+  .box {
+    width: 1520px; }
+  #person #downMenu {
+    width: 1920px; }
+  #banner {
+    width: 1520px; }
+  .floor {
+    width: 1520px; }
+    .floor .floor_1 {
+      width: 1520px; }
+      .floor .floor_1 .changeBox {
+        width: 1520px; }
+  .newStar {
+    width: 1520px; }
+    .newStar .starBox {
+      width: 1520px; }
+  .bgchange {
+    width: 1520px; }
+    .bgchange .bgScroll {
+      width: 1520px; }
+      .bgchange .bgScroll .bgBox {
+        width: 1520px; }
+  .footer {
+    width: 1520px; }
+  .bgpage {
+    width: 1520px; } }
+
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  .box {
+    width: 1920px; }
+  #person #downMenu {
+    width: 1920px; }
+  #banner {
+    width: 1920px; }
+  .floor {
+    width: 1920px; }
+    .floor .floor_1 {
+      width: 1920px; }
+      .floor .floor_1 .changeBox {
+        width: 1920px; }
+  .newStar {
+    width: 1920px; }
+    .newStar .starBox {
+      width: 1920px; }
+  .bgchange {
+    width: 1920px; }
+    .bgchange .bgScroll {
+      width: 1920px; }
+      .bgchange .bgScroll .bgBox {
+        width: 1920px; }
+  .footer {
+    width: 1920px; }
+  .bgpage {
+    width: 1920px; } }
+
+@media screen and (min-width: 1920px) {
+  .box {
+    width: 1920px; }
+  #person #downMenu {
+    width: 1920px; }
+  #banner {
+    width: 1920px; }
+  .floor {
+    width: 1920px; }
+    .floor .floor_1 {
+      width: 1920px; }
+      .floor .floor_1 .changeBox {
+        width: 1920px; }
+  .newStar {
+    width: 1920px; }
+    .newStar .starBox {
+      width: 1920px; }
+  .bgchange {
+    width: 1920px; }
+    .bgchange .bgScroll {
+      width: 1920px; }
+      .bgchange .bgScroll .bgBox {
+        width: 1920px; }
+  .footer {
+    width: 1920px; }
+  .bgpage {
+    width: 1920px; } }
+
+.box {
+  height: 100%; }
+
+#header {
+  width: 90%;
+  height: 70px;
+  background: rgba(255, 255, 255, 0);
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 0;
+  margin: auto;
+  padding-left: 10%;
+  z-index: 701; }
+  #header #logo {
+    width: 80px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    left: 0;
+    top: 0; }
+    #header #logo img {
+      display: none; }
+
+#header_1 {
+  width: 100%;
+  height: 70px;
+  margin: auto; }
+
+.logo {
+  width: 60px;
+  height: 180px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0; }
+
+#person {
+  width: 125px;
+  height: 70px;
+  font: 16px/16px "微软雅黑";
+  float: left;
+  line-height: 70px;
+  text-align: center;
+  margin-right: 20px; }
+  #person a {
+    color: #fff;
+    display: block; }
+    #person a span {
+      float: left; }
+    #person a .icon3 {
+      width: 10px;
+      height: 10px;
+      background-position: -142px -72px;
+      margin-top: 30px; }
+
+#bussis {
+  width: 125px;
+  height: 70px;
+  font: 16px/16px "微软雅黑";
+  float: left;
+  line-height: 70px;
+  text-align: center; }
+  #bussis a {
+    color: #fff;
+    display: block; }
+    #bussis a span {
+      float: left; }
+    #bussis a .icon4 {
+      width: 10px;
+      height: 10px;
+      background-position: -142px -72px;
+      margin-top: 30px; }
+
+#nav {
+  width: 300px;
+  height: 70px;
+  float: left; }
+  #nav li {
+    width: 56px;
+    float: left;
+    line-height: 70px;
+    text-align: center; }
+    #nav li a {
+      font: 16px/16px "微软雅黑";
+      color: #fff; }
+
+#header #right {
+  padding-top: 17px;
+  padding-right: 50px; }
+  #header #right .shopping {
+    width: 78px;
+    height: 38px;
+    float: right; }
+    #header #right .shopping .icon1 {
+      margin-top: 10px;
+      width: 26px;
+      height: 19px;
+      background-position: -72px -77px; }
+    #header #right .shopping .icon1_1 {
+      width: 23px;
+      height: 19px;
+      background-position: -490px -10px;
+      text-align: center;
+      font-size: 12px;
+      color: #fff; }
+  #header #right .login {
+    width: 37px;
+    height: 38px;
+    float: right; }
+    #header #right .login .icon2 {
+      margin-top: 10px;
+      width: 26px;
+      height: 19px;
+      background-position: -9px -96px; }
+  #header #right .search {
+    width: 270px;
+    height: 38px;
+    border-radius: 30px;
+    background: rgba(83, 83, 83, 0.3);
+    float: right;
+    margin-right: 50px; }
+    #header #right .search input[type=text] {
+      color: #bdbdbd;
+      background-color: rgba(81, 81, 81, 0.03);
+      border: none;
+      display: block;
+      width: 216px;
+      height: 36px;
+      float: left;
+      margin-left: 14px; }
+    #header #right .search input[type=button] {
+      width: 30px;
+      height: 30px;
+      float: left;
+      border-radius: 50%;
+      margin: 3px;
+      background: #fff url(../images/icon/icon_2.png) center center no-repeat; }
+
+#banner {
+  height: 600px;
+  z-index: 20; }
+  #banner .banner_1 {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    z-index: 700; }
+    #banner .banner_1 .icon2_1 {
+      position: absolute;
+      top: 50%;
+      width: 40px;
+      height: 70px;
+      background-position: -88px -192px;
+      display: none;
+      cursor: pointer;
+      z-index: 667; }
+    #banner .banner_1 .icon2_2 {
+      z-index: 667;
+      position: absolute;
+      top: 50%;
+      width: 40px;
+      height: 70px;
+      background-position: -129px -192px;
+      display: none;
+      cursor: pointer; }
+    #banner .banner_1 ol {
+      width: 220px;
+      height: 8px;
+      position: absolute;
+      bottom: 40px;
+      left: 40%;
+      z-index: 668; }
+      #banner .banner_1 ol li {
+        width: 8px;
+        height: 8px;
+        float: left;
+        border-radius: 50%;
+        background: #383838;
+        margin: 0 8px 0 8px; }
+    #banner .banner_1 .pic ul {
+      position: relative; }
+      #banner .banner_1 .pic ul li {
+        width: 100%;
+        height: 100%;
+        position: absolute; }
+        #banner .banner_1 .pic ul li a {
+          display: block; }
+
+.floor {
+  height: 100%;
+  position: relative;
+  z-index: 200; }
+  .floor .floor_1 {
+    height: 462px; }
+    .floor .floor_1 .changeBox {
+      height: 462px;
+      background: #f7f7f7; }
+      .floor .floor_1 .changeBox .boxBody {
+        width: 1200px;
+        height: 40px;
+        margin: 0 auto;
+        padding-top: 50px; }
+        .floor .floor_1 .changeBox .boxBody li {
+          width: 264px;
+          height: 333px;
+          background: #fff;
+          border: 10px solid #fff;
+          margin: 0 8px;
+          float: left;
+          position: relative;
+          overflow: hidden;
+          z-index: 100; }
+
+.newStar {
+  height: 962px;
+  background: #fff;
+  position: relative;
+  z-index: 20; }
+  .newStar .starBox {
+    margin: auto;
+    padding: 56px 0 40px;
+    height: 962px;
+    background: #fff; }
+    .newStar .starBox .starHeader {
+      width: 1200px;
+      height: 50px;
+      margin: auto;
+      margin-bottom: 34px;
+      background: #fff; }
+      .newStar .starBox .starHeader p {
+        font-size: 48px;
+        line-height: 50px;
+        float: left; }
+      .newStar .starBox .starHeader .starHeaderRight {
+        width: 700px;
+        font-size: 14px;
+        float: right;
+        padding-top: 30px; }
+        .newStar .starBox .starHeader .starHeaderRight li {
+          color: #a4a3a3;
+          cursor: pointer;
+          float: left; }
+          .newStar .starBox .starHeader .starHeaderRight li span {
+            margin: 0 25px; }
+    .newStar .starBox .starBottom {
+      width: 1200px;
+      height: 782px;
+      position: relative;
+      margin: auto;
+      z-index: 100; }
+      .newStar .starBox .starBottom .starPro {
+        width: 1200px;
+        height: 782px;
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 0; }
+        .newStar .starBox .starBottom .starPro .starProLeft {
+          float: left;
+          width: 584px;
+          height: 782px;
+          border: 4px solid #fff;
+          box-sizing: border-box;
+          padding-top: 4px; }
+          .newStar .starBox .starBottom .starPro .starProLeft img {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto; }
+        .newStar .starBox .starBottom .starPro .starProRight {
+          float: left;
+          width: 616px;
+          height: 782px; }
+          .newStar .starBox .starBottom .starPro .starProRight ul {
+            width: 616px;
+            height: 782px;
+            z-index: 100; }
+            .newStar .starBox .starBottom .starPro .starProRight ul li {
+              width: 300px;
+              height: 392px;
+              float: left;
+              border: 6px solid #fff;
+              box-sizing: border-box;
+              position: relative;
+              overflow: hidden; }
+              .newStar .starBox .starBottom .starPro .starProRight ul li a {
+                width: 300px;
+                height: 392px;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 666; }
+                .newStar .starBox .starBottom .starPro .starProRight ul li a img {
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                  margin: 0 auto; }
+
+.bgChange {
+  height: 595px; }
+  .bgChange .bgScroll {
+    height: 595px; }
+    .bgChange .bgScroll .bgBox {
+      height: 595px;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+      z-index: 20; }
+      .bgChange .bgScroll .bgBox .bgPic {
+        width: 100%;
+        height: 595px; }
+        .bgChange .bgScroll .bgBox .bgPic img {
+          width: 100%;
+          height: 100%; }
+      .bgChange .bgScroll .bgBox .scrollPic {
+        width: 100%;
+        height: 274px;
+        position: absolute;
+        bottom: 60px; }
+        .bgChange .bgScroll .bgBox .scrollPic .eightPic {
+          width: 5776px;
+          height: 265px;
+          position: absolute;
+          top: 0;
+          left: -304px;
+          overflow: hidden;
+          z-index: 200; }
+          .bgChange .bgScroll .bgBox .scrollPic .eightPic li {
+            float: left;
+            width: 304px;
+            height: 270px; }
+            .bgChange .bgScroll .bgBox .scrollPic .eightPic li:hover {
+              margin-top: -10px;
+              transition: all 1s; }
+            .bgChange .bgScroll .bgBox .scrollPic .eightPic li a img {
+              width: 100%; }
+      .bgChange .bgScroll .bgBox .bgLeft {
+        width: 304px;
+        height: 265px;
+        position: absolute;
+        bottom: 69px;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        z-index: 201; }
+        .bgChange .bgScroll .bgBox .bgLeft .icon_3 {
+          width: 24px;
+          height: 44px;
+          background: url("../images/icon/left.png") center center no-repeat;
+          position: absolute;
+          top: 40%;
+          right: 20px;
+          z-index: 200;
+          cursor: pointer; }
+      .bgChange .bgScroll .bgBox .bgRight {
+        width: 304px;
+        height: 265px;
+        position: absolute;
+        bottom: 69px;
+        left: 1216px;
+        background: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        z-index: 201; }
+        .bgChange .bgScroll .bgBox .bgRight .icon_4 {
+          width: 24px;
+          height: 44px;
+          background: url("../images/icon/right.png") center center no-repeat;
+          position: absolute;
+          top: 40%;
+          left: 20px;
+          z-index: 200;
+          cursor: pointer; }
+
+.footer {
+  width: 100%;
+  height: 381px;
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+  background: #272727; }
+  .footer .footMid {
+    width: 1100px;
+    padding: 44px 0 52px 100px; }
+    .footer .footMid li {
+      width: 210px;
+      float: left; }
+      .footer .footMid li a {
+        width: 210px;
+        display: block;
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 12px;
+        color: #ccc; }
+      .footer .footMid li a:nth-child(1) {
+        width: 210px;
+        display: block;
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 12px;
+        font-weight: bold; }
+      .footer .footMid li h6 {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 18px;
+        color: #ccc; }
+      .footer .footMid li ol {
+        width: 230px;
+        height: 48px;
+        margin: 2px 0 10px;
+        z-index: 100; }
+        .footer .footMid li ol li {
+          width: 37px;
+          height: 36px;
+          margin: 6px 7px 6px 5px; }
+          .footer .footMid li ol li a {
+            width: 37px;
+            height: 36px;
+            display: block; }
+            .footer .footMid li ol li a .dark_1 {
+              width: 37px;
+              height: 36px;
+              background-position: -9px -190px; }
+            .footer .footMid li ol li a .dark_2 {
+              width: 37px;
+              height: 36px;
+              background-position: -63px -190px; }
+            .footer .footMid li ol li a .dark_3 {
+              width: 37px;
+              height: 36px;
+              background-position: -120px -190px; }
+            .footer .footMid li ol li a .dark_4 {
+              width: 37px;
+              height: 36px;
+              background-position: -175px -190px; }
+            .footer .footMid li ol li a .light_1 {
+              width: 37px;
+              height: 36px;
+              background-position: -9px -238px; }
+            .footer .footMid li ol li a .light_2 {
+              width: 37px;
+              height: 36px;
+              background-position: -63px -238px; }
+            .footer .footMid li ol li a .light_3 {
+              width: 37px;
+              height: 36px;
+              background-position: -120px -238px; }
+            .footer .footMid li ol li a .light_4 {
+              width: 37px;
+              height: 36px;
+              background-position: -175px -238px; }
+      .footer .footMid li #mid {
+        width: 230px;
+        height: 22px; }
+        .footer .footMid li #mid a {
+          width: 82px;
+          height: 22px;
+          display: block;
+          margin: 0 15px 0 5px;
+          float: left; }
+          .footer .footMid li #mid a .weibo {
+            width: 82px;
+            height: 20px;
+            background-position: -9px -132px; }
+          .footer .footMid li #mid a .baidu {
+            width: 74px;
+            height: 24px;
+            background-position: -118px -130px; }
+      .footer .footMid li #bottom {
+        width: 185px;
+        height: 25px;
+        padding-top: 60px;
+        position: relative; }
+        .footer .footMid li #bottom .china {
+          width: 186px;
+          height: 25px;
+          background: url(../images/icon/china.jpg) 0 0 no-repeat; }
+        .footer .footMid li #bottom .country {
+          position: absolute;
+          width: 186px;
+          height: 210px;
+          background: #fff;
+          border: 1px solid #858585;
+          bottom: 25px;
+          left: 0;
+          overflow-y: auto;
+          overflow-x: hidden;
+          z-index: 50;
+          display: none; }
+
+#downMenu {
+  width: 1350px;
+  height: 0px;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  background: #fff;
+  z-index: 999;
+  display: none;
+  overflow: hidden; }
+  #downMenu .menuTop {
+    width: 1200px;
+    height: 120px;
+    margin-top: 20px;
+    background: #fff;
+    margin: auto; }
+    #downMenu .menuTop li {
+      width: 171px;
+      height: 94px;
+      text-align: center;
+      float: left; }
+      #downMenu .menuTop li a {
+        width: 171px;
+        height: 98px;
+        color: #898989;
+        display: block; }
+        #downMenu .menuTop li a img {
+          width: 68px;
+          vertical-align: top; }
+          #downMenu .menuTop li a img:nth-child(2) {
+            display: none; }
+        #downMenu .menuTop li a p {
+          height: 18px;
+          width: 171px;
+          font-size: 16px;
+          line-height: 16px;
+          margin-top: 10px; }
+      #downMenu .menuTop li ol {
+        width: 1200px;
+        height: 240px;
+        overflow: hidden;
+        padding-top: 30px;
+        display: none;
+        position: absolute;
+        left: 10%; }
+        #downMenu .menuTop li ol li {
+          width: 220px;
+          height: 237px;
+          padding-left: 30px;
+          box-sizing: border-box;
+          float: left;
+          border-left: 1px solid #d6d6d6; }
+          #downMenu .menuTop li ol li p {
+            height: 20px; }
+            #downMenu .menuTop li ol li p a {
+              height: 20px;
+              line-height: 20px;
+              display: block;
+              text-align: left;
+              font-size: 18px;
+              color: #3399ff; }
+          #downMenu .menuTop li ol li dl {
+            width: 190px;
+            height: 100%;
+            overflow: hidden; }
+            #downMenu .menuTop li ol li dl dd {
+              width: 190px;
+              height: 25px;
+              margin: 8px 0;
+              float: left; }
+              #downMenu .menuTop li ol li dl dd span {
+                width: 12px;
+                height: 10px;
+                float: left;
+                margin-top: 8px;
+                background: url(../images/icon/icon_6.png) 0 0 no-repeat; }
+              #downMenu .menuTop li ol li dl dd a {
+                height: 25px;
+                display: block;
+                float: left;
+                line-height: 25px;
+                text-align: left;
+                font-size: 16px; }
+
+.bgpage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background: #000;
+  filter: alpha(opacity=30);
+  opacity: .3;
+  display: none; }
+
+.lrpage {
+  position: fixed;
+  width: 330px;
+  height: auto;
+  padding: 0 125px;
+  left: 50%;
+  top: 90px;
+  margin-left: -290px;
+  z-index: 1000100;
+  background: #fff;
+  padding-bottom: 30px;
+  display: none; }
+  .lrpage .close {
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: -28px;
+    right: -66px;
+    z-index: 100990;
+    background: url("../images/icon/icon-close.png") center center no-repeat; }
+  .lrpage .login .title {
+    margin-top: 60px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px; }
+  .lrpage .login .loginBox {
+    margin-top: 38px; }
+    .lrpage .login .loginBox .name {
+      width: 100%;
+      margin-bottom: 14px; }
+      .lrpage .login .loginBox .name input {
+        width: 258px;
+        border: 1px solid #d6d6d6;
+        height: 44px;
+        line-height: 44px;
+        padding-left: 20px;
+        padding-right: 50px;
+        font-size: 14px;
+        color: #8c8c8c;
+        display: block;
+        cursor: pointer; }
+    .lrpage .login .loginBox .password {
+      width: 100%;
+      margin-bottom: 14px; }
+      .lrpage .login .loginBox .password input {
+        width: 258px;
+        border: 1px solid #d6d6d6;
+        height: 44px;
+        line-height: 44px;
+        padding-left: 20px;
+        padding-right: 50px;
+        font-size: 14px;
+        color: #8c8c8c;
+        display: block;
+        cursor: pointer; }
+    .lrpage .login .loginBox .lrStatus {
+      margin: 16px 0; }
+      .lrpage .login .loginBox .lrStatus input[type="checkbox"] {
+        width: 13px;
+        height: 13px;
+        display: block;
+        float: left;
+        margin-right: 5px;
+        outline: none;
+        border: 1px solid #000;
+        cursor: pointer; }
+      .lrpage .login .loginBox .lrStatus p {
+        line-height: 14px;
+        color: #000;
+        font-size: 14px;
+        width: 200px;
+        cursor: pointer; }
+    .lrpage .login .loginBox #submit {
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      width: 330px;
+      background: #e22319;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      margin: 10px 0 0;
+      border: 0;
+      outline: 0;
+      cursor: pointer; }
+    .lrpage .login .loginBox .register {
+      margin: 16px 0; }
+      .lrpage .login .loginBox .register .phone {
+        float: left;
+        color: #ef1c22;
+        font-size: 14px;
+        line-height: 14px; }
+      .lrpage .login .loginBox .register .login_1 {
+        float: right; }
+        .lrpage .login .loginBox .register .login_1 .btn_1 {
+          border-right: 1px solid #a4a3a3;
+          padding-right: 5px;
+          font-size: 14px;
+          line-height: 14px;
+          float: left;
+          color: #757575; }
+        .lrpage .login .loginBox .register .login_1 .btn_2 {
+          border-left: 1px solid #e3e3e3;
+          padding-left: 5px;
+          font-size: 14px;
+          line-height: 14px;
+          float: left;
+          color: #757575; }
+    .lrpage .login .loginBox .others {
+      width: 330px;
+      margin-top: 50px; }
+      .lrpage .login .loginBox .others .otherTitle {
+        width: 330px;
+        text-align: center;
+        font-size: 14px;
+        color: #8c8c8c;
+        line-height: 14px;
+        height: 14px;
+        overflow: hidden; }
+        .lrpage .login .loginBox .others .otherTitle span {
+          width: 123px;
+          height: 1px;
+          background: #a4a3a3;
+          float: left;
+          margin-top: 6px;
+          display: block; }
+        .lrpage .login .loginBox .others .otherTitle p {
+          text-align: center;
+          font-size: 14px;
+          color: #8c8c8c;
+          line-height: 14px;
+          float: left;
+          font-style: normal; }
+    .lrpage .login .loginBox .iconPics {
+      margin-top: 15px;
+      padding: 0 60px;
+      overflow: hidden; }
+      .lrpage .login .loginBox .iconPics a {
+        margin-left: 10px;
+        display: block;
+        float: left; }
+        .lrpage .login .loginBox .iconPics a .icon_qq {
+          background: url("../images/pic/qq.png") 0 0 no-repeat;
+          display: block;
+          margin: 0 auto;
+          width: 31px;
+          height: 31px; }
+        .lrpage .login .loginBox .iconPics a .icon_wb {
+          background: url("../images/pic/weibo.png") 0 0 no-repeat;
+          display: block;
+          margin: 0 auto;
+          width: 31px;
+          height: 31px; }
+        .lrpage .login .loginBox .iconPics a .icon_wx {
+          background: url("../images/pic/weixin.png") 0 0 no-repeat;
+          display: block;
+          margin: 0 auto;
+          width: 31px;
+          height: 31px; }
+        .lrpage .login .loginBox .iconPics a .icon_zf {
+          background: url("../images/pic/zhifubao.png") 0 0 no-repeat;
+          display: block;
+          margin: 0 auto;
+          width: 31px;
+          height: 31px; }

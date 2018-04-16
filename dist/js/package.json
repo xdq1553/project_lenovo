@@ -1,0 +1,24 @@
+{
+  "name": "work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "lenovo"
+  },
+  "keywords": [
+    "lenovo"
+  ],
+  "author": "xiongdongqi",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass-china": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

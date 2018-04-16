@@ -1,0 +1,321 @@
+body {
+  height: 3000px;
+  background: #f7f7f7; }
+
+@media screen and (min-width: 1420px) and (max-width: 1520px) {
+  body {
+    width: 1520px; } }
+
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  body {
+    width: 1920px; } }
+
+@media screen and (min-width: 1920px) {
+  body {
+    width: 1920px; } }
+
+.top {
+  padding-left: 10%;
+  background: #444;
+  height: 35px;
+  margin: auto; }
+  .top ul {
+    width: 1200px;
+    height: 35px;
+    margin: auto;
+    overflower: hidden;
+    padding-left: 20px;
+    background: #444; }
+    .top ul li {
+      width: 64px;
+      height: 35px;
+      padding-left: 8px;
+      line-height: 35px;
+      float: left; }
+      .top ul li a {
+        color: #cacaca;
+        font-size: 12px; }
+
+.logo {
+  width: 60px;
+  height: 180px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0; }
+
+.register {
+  width: 358px;
+  margin: 60px auto 140px;
+  background: #fff;
+  padding: 52px 249px 64px; }
+  .register .title {
+    font-size: 30px;
+    lineheight: 30px;
+    text-align: center; }
+  .register .twoTitle {
+    margin-top: 38px;
+    margin-bottom: 14px;
+    overflow: hidden; }
+    .register .twoTitle .person {
+      color: #e43e38;
+      border-right: 1px solid #e4e4e4;
+      width: 178px;
+      float: left;
+      text-align: center;
+      line-height: 22px;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer; }
+    .register .twoTitle .company {
+      color: #424242;
+      border-left: 1px solid #e4e4e4;
+      width: 178px;
+      float: left;
+      text-align: center;
+      line-height: 22px;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer; }
+  .register .main .rePerson .name .name_1 {
+    width: 291px;
+    border: 1px solid #d6d6d6;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-bottom: 14px;
+    padding-right: 50px; }
+  .register .main .rePerson .move {
+    margin-bottom: 14px; }
+    .register .main .rePerson .move .slider {
+      width: 358px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0);
+      background: url("../images/pic/wrap.png") 0 0 no-repeat;
+      position: relative; }
+      .register .main .rePerson .move .slider .wrap {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 50px;
+        font-size: 14px;
+        color: #424242;
+        background: url("../images/pic/block.png") 70% center no-repeat; }
+      .register .main .rePerson .move .slider .block {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        background: #fff url("../images/pic/block_1.png") center center no-repeat;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        cursor: move; }
+      .register .main .rePerson .move .slider .bottom {
+        height: 50px;
+        background: #33cc00;
+        width: 0px; }
+  .register .main .rePerson .captcha {
+    position: relative; }
+    .register .main .rePerson .captcha .msg {
+      float: left;
+      width: 180px;
+      padding-left: 15px;
+      border: 1px solid #d6d6d6;
+      height: 48px;
+      line-height: 48px;
+      font-size: 14px;
+      color: #8c8c8c;
+      margin-bottom: 14px;
+      padding-right: 50px;
+      display: block; }
+    .register .main .rePerson .captcha .getmsg {
+      float: left;
+      width: 110px;
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      border: 1px solid #d6d6d6;
+      border-left: 0;
+      background-color: #f7f7f7;
+      font-size: 14px;
+      color: #3680c1; }
+  .register .main .rePerson .password {
+    position: relative; }
+    .register .main .rePerson .password .pwd {
+      width: 291px;
+      border: 1px solid #d6d6d6;
+      height: 48px;
+      line-height: 48px;
+      padding-left: 15px;
+      font-size: 14px;
+      color: #8c8c8c;
+      margin-bottom: 14px;
+      padding-right: 50px; }
+  .register .main .rePerson .password_1 {
+    position: relative; }
+    .register .main .rePerson .password_1 .pwd_1 {
+      width: 291px;
+      border: 1px solid #d6d6d6;
+      height: 48px;
+      line-height: 48px;
+      padding-left: 15px;
+      font-size: 14px;
+      color: #8c8c8c;
+      margin-bottom: 14px;
+      padding-right: 50px; }
+  .register .main .reCompany {
+    height: 509px;
+    display: none; }
+    .register .main .reCompany .name .name_1 {
+      width: 291px;
+      border: 1px solid #d6d6d6;
+      height: 48px;
+      line-height: 48px;
+      padding-left: 15px;
+      font-size: 14px;
+      color: #8c8c8c;
+      margin-bottom: 14px;
+      padding-right: 50px; }
+    .register .main .reCompany .companyname .name_1 {
+      width: 291px;
+      border: 1px solid #d6d6d6;
+      height: 48px;
+      line-height: 48px;
+      padding-left: 15px;
+      font-size: 14px;
+      color: #8c8c8c;
+      margin-bottom: 14px;
+      padding-right: 50px; }
+    .register .main .reCompany .email .name_1 {
+      width: 291px;
+      border: 1px solid #d6d6d6;
+      height: 48px;
+      line-height: 48px;
+      padding-left: 15px;
+      font-size: 14px;
+      color: #8c8c8c;
+      margin-bottom: 14px;
+      padding-right: 50px; }
+    .register .main .reCompany .number .name_1 {
+      width: 291px;
+      border: 1px solid #d6d6d6;
+      height: 48px;
+      line-height: 48px;
+      padding-left: 15px;
+      font-size: 14px;
+      color: #8c8c8c;
+      margin-bottom: 14px;
+      padding-right: 50px; }
+    .register .main .reCompany .password .name_1 {
+      width: 291px;
+      border: 1px solid #d6d6d6;
+      height: 48px;
+      line-height: 48px;
+      padding-left: 15px;
+      font-size: 14px;
+      color: #8c8c8c;
+      margin-bottom: 14px;
+      padding-right: 50px; }
+    .register .main .reCompany .password_1 .name_1 {
+      width: 291px;
+      border: 1px solid #d6d6d6;
+      height: 48px;
+      line-height: 48px;
+      padding-left: 15px;
+      font-size: 14px;
+      color: #8c8c8c;
+      margin-bottom: 14px;
+      padding-right: 50px; }
+    .register .main .reCompany .move {
+      margin-bottom: 14px; }
+      .register .main .reCompany .move .slider {
+        width: 358px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0);
+        background: url("../images/pic/wrap.png") 0 0 no-repeat;
+        position: relative; }
+        .register .main .reCompany .move .slider .wrap {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          position: absolute;
+          top: 0;
+          left: 0;
+          line-height: 50px;
+          font-size: 14px;
+          color: #424242;
+          background: url("../images/pic/block.png") 70% center no-repeat; }
+        .register .main .reCompany .move .slider .block {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          position: absolute;
+          top: 0;
+          left: 0px;
+          background: #fff url("../images/pic/block_1.png") center center no-repeat;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+          cursor: move; }
+        .register .main .reCompany .move .slider .bottom {
+          height: 50px;
+          background: #33cc00;
+          width: 0px; }
+    .register .main .reCompany .captcha {
+      position: relative; }
+      .register .main .reCompany .captcha .msg {
+        float: left;
+        width: 180px;
+        padding-left: 15px;
+        border: 1px solid #d6d6d6;
+        height: 48px;
+        line-height: 48px;
+        font-size: 14px;
+        color: #8c8c8c;
+        margin-bottom: 14px;
+        padding-right: 50px;
+        display: block; }
+      .register .main .reCompany .captcha .getmsg {
+        float: left;
+        width: 110px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        border: 1px solid #d6d6d6;
+        border-left: 0;
+        background-color: #f7f7f7;
+        font-size: 14px;
+        color: #3680c1; }
+  .register .main .reBtn {
+    width: 358px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    background-color: #e22319;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px; }
+    .register .main .reBtn:hover {
+      background-color: #ef3229; }
+  .register .main .agree {
+    margin-top: 10px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #757575; }
+    .register .main .agree span a {
+      color: #424242;
+      font-weight: 700;
+      letter-spacing: 1px; }
+    .register .main .agree .goin {
+      display: block;
+      text-align: right;
+      font-size: 14px;
+      line-height: 14px;
+      margin-top: 5px; }
